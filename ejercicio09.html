@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio09</title>
+</head>
+<body>
+    Ingrese la palabra
+    <input type="text" id="nro1"></input> </br>
+    <button onclick="contador()">Calcular</button>
+    <p id = "resultado"></p>
+    <script>
+        function contador(){
+            var i ,cont = 0;
+            var nro1 = document.getElementById("nro1").value;
+            for (i = 0; i < nro1.length; i++){
+                if (nro1.substr(i,1) == "a") {
+                    cont++;
+                }
+            }
+            document.getElementById("resultado").innerHTML= "Existe " + cont + " 'a' en la palabra : " + nro1;
+        }
+
+    </script>
+</body>
+</html>
